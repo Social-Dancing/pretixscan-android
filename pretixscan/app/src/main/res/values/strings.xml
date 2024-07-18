@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">pretixSCAN</string>
-    <string name="title_activity_main">pretixSCAN</string>
-    <string name="headline_setup">Welcome to pretixSCAN!</string>
+    <string name="app_name">SD scan</string>
+    <string name="title_activity_main">SD scan</string>
+    <string name="headline_setup">Welcome to SD scan!</string>
     <string name="action_sync">Synchronize now</string>
     <string name="progress_syncing_first">Downloading event configuration…</string>
     <string name="progress_syncing">Synchronizing with server…</string>
@@ -39,9 +39,9 @@
     <string name="operation_select_checkinlist">Select Check-in list</string>
     <string name="settings_label_auto_sync">Automatic Synchronization</string>
     <string name="settings_label_orders_sync">Download orders</string>
-    <string name="settings_summary_orders_sync">Without this option, pretixSCAN will not download order data and not be able to scan offline tickets with pretix\'s default settings.</string>
+    <string name="settings_summary_orders_sync">Without this option, SDscan will not download order data and not be able to scan offline tickets with Socail Dancing\'s default settings.</string>
     <string name="settings_label_auto_switch">Automatic event selection</string>
-    <string name="settings_summary_auto_switch">With this option, pretixSCAN will ask the server during synchronization if the server suggests switching the app to a different event and check-in list and then switches automatically.</string>
+    <string name="settings_summary_auto_switch">With this option, SDscan will ask the server during synchronization if the server suggests switching the app to a different event and check-in list and then switches automatically.</string>
     <plurals name="sync_status_time_minutes">
         <item quantity="one">synchronized %d minute ago</item>
         <item quantity="other">synchronized %d minutes ago</item>
@@ -69,10 +69,10 @@
     <string name="first_scanned">First scanned: %s</string>
     <string name="datetime_format">%1$tY-%1$tm-%1$td %1$tH:%1$tM</string>
     <string name="ok">OK</string>
-    <string name="tutorial_setup">To get started, create a new device in the "Devices" section of your organizer account in the pretix backend. You will be then presented with a configuration QR code to scan.</string>
-    <string name="setup_error_legacy_qr_code">The QR code you scanned is for an old predecessor of this app. Please go to the "Devices" section in your pretix organizer account and create a new device there.</string>
-    <string name="setup_error_invalid_qr_code">The QR code you scanned is not a valid configuration code. Please make sure you created the code in the "Devices" section of a pretix organizer account.</string>
-    <string name="setup_error_version_too_high">The QR code you scanned is from a newer version of pretix than this app has been built for. Please check if you can get an update for this app!</string>
+    <string name="tutorial_setup">To get started, create a new device in the "Devices" section of your organizer account in the Socail Dancing Tickets backend. You will be then presented with a configuration QR code to scan.</string>
+    <string name="setup_error_legacy_qr_code">The QR code you scanned is for an old predecessor of this app. Please go to the "Devices" section in your Social Dancing organizer account and create a new device there.</string>
+    <string name="setup_error_invalid_qr_code">The QR code you scanned is not a valid configuration code. Please make sure you created the code in the "Devices" section of a Social Dancing organizer account.</string>
+    <string name="setup_error_version_too_high">The QR code you scanned is from a newer version of Social Dancing than this app has been built for. Please check if you can get an update for this app!</string>
     <string name="setup_progress">Initializing device…</string>
     <string name="setup_error_request">Request rejected by server. Please double-check your input.</string>
     <string name="setup_error_io">Connection error while trying to reach the server.</string>
@@ -80,8 +80,8 @@
     <string name="setup_error_server">Server error while trying to register the device.</string>
     <string name="setup_error_response">The server returned an invalid response.</string>
     <string name="setup_error_failed">The initial connection test failed.</string>
-    <string name="setup_error_permissions">pretixSCAN does not work properly without granting those permissions. Please restart the app.</string>
-    <string name="welcome_text">pretixSCAN is a event entry app that you can use to validate tickets that you sold through pretix.</string>
+    <string name="setup_error_permissions">SDscan does not work properly without granting those permissions. Please restart the app.</string>
+    <string name="welcome_text">SDscan is a event entry app that you can use to validate tickets that you sold through Social Dancing.</string>
     <string name="welcome_disclaimer1">I understand that personal data of attendees of my connected events will be stored on this device and I will secure the device properly.</string>
     <string name="cont">CONTINUE</string>
     <string name="hint_url">URL</string>
@@ -147,7 +147,7 @@
     <string name="dialog_unpaid_retry">Check in anyways</string>
     <string name="preference_badgeprint_enable">Enable badge printing</string>
     <string name="preference_autobadgeprint_enable">Print badges automatically after successful scan</string>
-    <string name="preference_badgeprint_install_pretixprint">Printing badges requires the separate pretixPRINT app. Do you want to install it?</string>
+    <string name="preference_badgeprint_install_pretixprint">Printing badges requires the separate SDprint app. Do you want to install it?</string>
     <string name="already_scanned">already scanned</string>
     <string name="total_tickets_sold">total tickets sold</string>
     <string name="ticket_attention">Attention, special ticket!</string>
