@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">pretixSCAN</string>
-    <string name="title_activity_main">pretixSCAN</string>
-    <string name="headline_setup">Willkommen zu pretixSCAN!</string>
+    <string name="app_name">SD Scan</string>
+    <string name="title_activity_main">SD Scan</string>
+    <string name="headline_setup">Willkommen zu SDscan!</string>
     <string name="action_sync">Jetzt synchronisieren</string>
     <string name="progress_syncing_first">Lade Event-Konfiguration…</string>
     <string name="progress_syncing">Synchronisiere mit dem Server…</string>
@@ -50,10 +50,10 @@
     <string name="first_scanned">Zuerst gescannt: %s</string>
     <string name="datetime_format">%1$td.%1$tm.%1$tY %1$tH:%1$tM</string>
     <string name="ok">OK</string>
-    <string name="tutorial_setup">Um loszulegen, erstellen Sie ein neues Gerät im Abschnitt \"Geräte\" ihres Veranstalter-Kontos im pretix-Backend. Sie erhalten dann einen QR-Code zur Konfiguration, den Sie hier scannen können.</string>
+    <string name="tutorial_setup">Um loszulegen, erstellen Sie ein neues Gerät im Abschnitt \"Geräte\" ihres Veranstalter-Kontos im SD Scan-Backend. Sie erhalten dann einen QR-Code zur Konfiguration, den Sie hier scannen können.</string>
     <string name="setup_error_legacy_qr_code">Der gescannte QR-Code ist für einen Vorläufer dieser App gültig. Bitte gehen Sie stattdessen zum Abschnitt \"Geräte\" Ihres Veranstalterkontos und legen Sie dort ein neues Gerät an.</string>
-    <string name="setup_error_invalid_qr_code">Der QR-Code, den Sie gescannt haben, ist nicht gültig. Bitte stellen Sie sicher, dass er aus der \"Geräte\"-Sektion Ihres pretix-Veranstalterkontos stammt.</string>
-    <string name="setup_error_version_too_high">Der gescannte QR-Code ist von einer neueren pretix-Version als für diese App ausgelegt. Bitte prüfen Sie, ob es ein Update für diese App gibt!</string>
+    <string name="setup_error_invalid_qr_code">Der QR-Code, den Sie gescannt haben, ist nicht gültig. Bitte stellen Sie sicher, dass er aus der \"Geräte\"-Sektion Ihres SD Scan-Veranstalterkontos stammt.</string>
+    <string name="setup_error_version_too_high">Der gescannte QR-Code ist von einer neueren SD Scan-Version als für diese App ausgelegt. Bitte prüfen Sie, ob es ein Update für diese App gibt!</string>
     <string name="setup_progress">Initialisiere Gerät…</string>
     <string name="setup_error_request">Anfrage vom Server abgelehnt, bitte prüfen Sie Ihre Eingabe.</string>
     <string name="setup_error_io">Verbindungsfehler beim Versuch, den Server zu erreichen.</string>
@@ -61,8 +61,8 @@
     <string name="setup_error_server">Serverfehler beim Registrieren des Geräts.</string>
     <string name="setup_error_response">Der Server hat eine ungültige Antwort zurückgegeben.</string>
     <string name="setup_error_failed">Der initiale Verbindungstest ist fehlgeschlagen.</string>
-    <string name="setup_error_permissions">pretixSCAN funktioniert ohne diese Berechtigungen nicht. Bitte starten Sie die App neu.</string>
-    <string name="welcome_text">pretixSCAN ist eine App zur Einlasskontrolle, mit der Sie über pretix verkaufte Tickets kontrollieren können.</string>
+    <string name="setup_error_permissions">SDscan funktioniert ohne diese Berechtigungen nicht. Bitte starten Sie die App neu.</string>
+    <string name="welcome_text">SDscan ist eine App zur Einlasskontrolle, mit der Sie über SD Scan verkaufte Tickets kontrollieren können.</string>
     <string name="welcome_disclaimer1">Ich verstehe, dass personenbezogene Daten zu den Teilnehmern meiner Veranstaltungen auf diesem Gerät gespeichert werden und sichere das Gerät angemessen.</string>
     <string name="cont">WEITER</string>
     <string name="hint_url">URL</string>
@@ -113,7 +113,7 @@
     <string name="dialog_unpaid_retry">Trotzdem einchecken</string>
     <string name="preference_badgeprint_enable">Badge-Druck aktivieren</string>
     <string name="preference_autobadgeprint_enable">Badges automatisch drucken</string>
-    <string name="preference_badgeprint_install_pretixprint">Badge-Druck benötigt die pretixPRINT-App. Wollen Sie diese installieren\?</string>
+    <string name="preference_badgeprint_install_pretixprint">Badge-Druck benötigt die SD PRINT-App. Wollen Sie diese installieren\?</string>
     <string name="settings_label_badges">Badges</string>
     <string name="preference_badges_twice">Jedes Badge doppelt drucken</string>
     <string name="pref_unpaid_ask">Abfrage beim Check-in unbezahlter Bestellungen</string>
@@ -170,9 +170,9 @@
     <string name="settings_label_kioskmode">Kiosk-Modus</string>
     <string name="settings_summary_kioskmode">Der Kiosk-Modus versteckt Menüs die bei Selbstbedienung nicht benutzt werden sollten. Der Kiosk-Modus hindert Nutzer nicht daran, die App über Systemfunktionen zu verlassen. Um die Einstellungen zu betreten, müssen Sie einen QR-Code mit Ihrer PIN scannen.</string>
     <string name="settings_label_orders_sync">Bestellungen herunterladen</string>
-    <string name="settings_summary_orders_sync">Ohne diese Option wird pretixSCAN keine Bestelldaten herunterladen und bei Standardeinstellungen im Offline-Modus keine Tickets erkennen.</string>
+    <string name="settings_summary_orders_sync">Ohne diese Option wird SD Scan keine Bestelldaten herunterladen und bei Standardeinstellungen im Offline-Modus keine Tickets erkennen.</string>
     <string name="settings_label_auto_switch">Automatische Veranstaltungswahl</string>
-    <string name="settings_summary_auto_switch">Mit dieser Option fragt pretixSCAN den Server bei der Synchronisierung, ob ein Wechsel zu einer anderen Veranstaltung und Check-in-Liste empfohlen wird und führt diesen Wechsel automatisch durch.</string>
+    <string name="settings_summary_auto_switch">Mit dieser Option fragt SDscan den Server bei der Synchronisierung, ob ein Wechsel zu einer anderen Veranstaltung und Check-in-Liste empfohlen wird und führt diesen Wechsel automatisch durch.</string>
     <string name="currently_inside">aktuell anwesend</string>
     <string name="error_no_available_events">Es wurde kein gegenwärtiges oder zukünftiges Event gefunden. Bitte prüfen Sie das Datum und die Zugriffsrechte Ihrer Veranstaltungen.</string>
     <string name="event_select_calendar">Kalender anzeigen</string>

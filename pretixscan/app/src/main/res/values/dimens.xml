@@ -8,7 +8,7 @@
     <dimen name="camera_height">324dp</dimen>
     <dimen name="default_dialog_corners">4dp</dimen>
     <dimen name="default_card_corners">1dp</dimen>
-    <dimen name="dialog_minwidth"/>
+    <dimen name="dialog_minwidth" />
     <dimen name="event_name_length">240dp</dimen>
     <dimen name="card_result_padding_bottom">8dp</dimen>
     <dimen name="card_result_icon_padding">8dp</dimen>

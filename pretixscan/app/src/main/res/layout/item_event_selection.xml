@@ -7,13 +7,13 @@
 
         <variable
             name="eventSelection"
-            type="eu.pretix.pretixscan.droid.EventSelection" />
+            type="eu.socialdancing.sdscan.droid.EventSelection" />
 
         <variable
             name="checkinListName"
             type="java.lang.String" />
 
-        <import type="eu.pretix.pretixscan.utils.BindingConversionsKt" />
+        <import type="eu.socialdancing.sdscan.utils.BindingConversionsKt" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

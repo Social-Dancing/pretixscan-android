@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="@string/settings_label_verification">
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="pref_scan_offline"
             android:summary="@string/settings_summary_scan_offline"
             android:title="@string/settings_label_scan_offline" />
-        <eu.pretix.pretixscan.droid.ui.AutoOfflineListPreference
+        <eu.socialdancing.sdscan.droid.ui.AutoOfflineListPreference
             android:defaultValue="off"
             android:entries="@array/settings_valuelabels_auto_offline"
             android:entryValues="@array/settings_values_auto_offline"
@@ -41,7 +40,7 @@
             android:key="pref_sounds"
             android:title="@string/settings_label_sounds" />
         <Preference
-            android:fragment="eu.pretix.pretixscan.droid.ui.PinSettingsFragment"
+            android:fragment="eu.socialdancing.sdscan.droid.ui.PinSettingsFragment"
             android:key="pin_protect"
             android:title="@string/pin_protection" />
         <CheckBoxPreference

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
             name="disclaimer1"
             type="boolean" />
@@ -18,9 +19,9 @@
             style="@style/Widget.Material3.CardView.Elevated"
             android:layout_width="560dp"
             android:layout_height="match_parent"
-            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="16dp"
-            android:layout_gravity="center_horizontal">
+            android:layout_marginBottom="16dp">
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -34,9 +35,9 @@
                         android:id="@+id/textView21"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
                         android:gravity="center"
                         android:text="@string/headline_setup"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -48,9 +49,9 @@
                         android:id="@+id/textView22"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
                         android:text="@string/welcome_text"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -62,9 +63,9 @@
                         android:id="@+id/checkBox"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
                         android:checked="@={disclaimer1}"
                         android:text="@string/welcome_disclaimer1"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -75,8 +76,8 @@
                         android:id="@+id/button2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
                         android:backgroundTint="@color/pretix_brand_green"
                         android:enabled="@{disclaimer1}"
                         android:text="@string/cont"
