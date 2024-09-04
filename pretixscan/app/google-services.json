@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "245526537043",
+    "project_id": "sd-scan",
+    "storage_bucket": "sd-scan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245526537043:android:745bf4f7dc1b83819ab7a6",
+        "android_client_info": {
+          "package_name": "socialdancing.sdscan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADxmXDjbdsCm-q_LMZ8k4iAFG2FC72kUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
