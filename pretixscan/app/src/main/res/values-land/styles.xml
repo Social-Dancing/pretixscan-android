@@ -1,5 +1,0 @@
-<resources>
-    <style name="AppTheme.Actionbar" parent="ThemeOverlay.AppCompat.Dark">
-        <item name="displayOptions">showHome|useLogo|showTitle</item>
-    </style>
-</resources>

@@ -7,9 +7,9 @@
 
         <variable
             name="data"
-            type="eu.pretix.pretixscan.droid.ui.ViewDataHolder" />
+            type="eu.socialdancing.sdscan.droid.ui.ViewDataHolder" />
 
-        <import type="eu.pretix.pretixscan.droid.ui.ResultState" />
+        <import type="eu.socialdancing.sdscan.droid.ui.ResultState" />
 
         <import type="android.view.View" />
     </data>
@@ -25,7 +25,9 @@
             android:keepScreenOn="true"
             android:orientation="vertical">
 
-            <include android:id="@+id/mainToolbar" layout="@layout/include_main_toolbar" />
+            <include
+                android:id="@+id/mainToolbar"
+                layout="@layout/include_main_toolbar" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_offline_bar"
@@ -154,10 +156,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:visibility="@{data.resultState == ResultState.EMPTY ? View.VISIBLE : View.INVISIBLE}"
                         android:text="@{data.scanType.equals(&quot;exit&quot;) ? @string/scantype_exit_kiosk : (data.badgePrintEnabled ? @string/scantype_entry_kiosk_print : @string/scantype_entry_kiosk)}"
                         android:textSize="32sp"
                         android:textStyle="bold"
+                        android:visibility="@{data.resultState == ResultState.EMPTY ? View.VISIBLE : View.INVISIBLE}"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />

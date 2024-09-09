@@ -14,17 +14,17 @@ try {
 
 apply from: '../libpretixsync-repo/libpretixsync/versions.gradle'
 
-android {
-    namespace 'eu.pretix.pretixscan.droid'
+def var = android {
+    namespace 'eu.socialdancing.sdscan.droid'
 
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "eu.pretix.pretixscan.droid"
+        applicationId "socialdancing.sdscan"
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 94
-        versionName "2.8.2"
+        versionCode 05
+        versionName "0.0.5"
         vectorDrawables.useSupportLibrary = true
         vectorDrawables.generatedDensities = ['ldpi', 'mdpi', 'hdpi', 'xhdpi', 'xxhdpi']
         multiDexEnabled true
@@ -63,17 +63,17 @@ android {
         }
     }
 
-    buildTypes {
-		def sentry_dsn = ""
-		try {
-			Properties properties = new Properties()
-			properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    def types = buildTypes {
+        def sentry_dsn = ""
+        try {
+            Properties properties = new Properties()
+            properties.load(project.rootProject.file('local.properties').newDataInputStream())
             sentry_dsn = properties.getProperty('sentry.dsn')
             if (sentry_dsn == null) {
                 sentry_dsn = ""
             }
-		} catch (ignore) {
-		}
+        } catch (ignore) {
+        }
 
         release {
             minifyEnabled true
@@ -106,14 +106,14 @@ android {
     packagingOptions {
         resources {
             excludes += [
-                'META-INF/DEPENDENCIES',
-                'META-INF/LICENSE',
-                'META-INF/LICENSE.txt',
-                'META-INF/license.txt',
-                'META-INF/NOTICE',
-                'META-INF/NOTICE.txt',
-                'META-INF/notice.txt',
-                'META-INF/ASL2.0'
+                    'META-INF/DEPENDENCIES',
+                    'META-INF/LICENSE',
+                    'META-INF/LICENSE.txt',
+                    'META-INF/license.txt',
+                    'META-INF/NOTICE',
+                    'META-INF/NOTICE.txt',
+                    'META-INF/notice.txt',
+                    'META-INF/ASL2.0'
             ]
         }
     }
@@ -122,6 +122,7 @@ android {
         disable 'InvalidPackage', 'MissingTranslation'
     }
 }
+var
 
 repositories {
     google()

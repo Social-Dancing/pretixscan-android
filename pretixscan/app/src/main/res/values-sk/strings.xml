@@ -1,2 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">SD Scan</string>
+    <string name="title_activity_main">SD Scan</string>
+    <string name="headline_setup">Vitajte v SD Scan!</string>
+    <string name="action_sync">Synchronizovať teraz</string>
+    <string name="progress_syncing_first">Načítavam konfiguráciu udalosti…</string>
+    <string name="progress_syncing">Synchronizácia so serverom…</string>
+    <string name="progress_processing">Spracovávam akciu…</string>
+    <string name="progress_registering">Registrácia zariadenia na serveri…</string>
+    <string name="error_access_revoked">Prístup zariadenia bol odstránený, musíte zariadenie znovu
+        zaregistrovať na serveri.</string>
+    <string name="error_unknown_exception">Vyskytla sa neznáma chyba</string>
+    <string name="error_not_synchronized">Vaše zariadenie nie je správne synchronizované so serverom</string>
+    <string name="action_label_settings">Nastavenia</string>
+    <string name="action_label_statistics">Štatistiky</string>
+    <string name="action_search">Hľadať</string>
+    <string name="action_manual">Manuálne nastavenie</string>
+    <string name="action_multievent_enable">Expertný režim (možnosť výberu viacerých udalostí)</string>
+    <string name="action_multievent_disable">Deaktivovať expertný režim</string>
+    <string name="action_multievent_disable_error">Expertný režim nemožno deaktivovať, pokiaľ je
+        vybratých viacero udalostí.</string>
+    <string name="operation_select_event">Vybrať udalosť</string>
+    <string name="operation_select_events">Vybrať udalosti</string>
+    <string name="events_selected">%s udalosti vybrané</string>
+    <string name="operation_select_checkinlist">Vybrať check-in zoznam</string>
+    <string name="settings_label_auto_sync">Automatická synchronizácia</string>
+    <plurals name="sync_status_time_minutes">
+        <item quantity="one">synchronizované pred %d minútou</item>
+        <item quantity="other">synchronizované pred %d minútami</item>
+    </plurals>
+    <plurals name="sync_status_time_hours">
+        <item quantity="one">synchronizované pred %d hodinou</item>
+        <item quantity="other">synchronizované pred %d hodinami</item>
+    </plurals>
+    <plurals name="sync_status_time_days">
+        <item quantity="one">synchronizované pred %d dňom</item>
+        <item quantity="other">synchronizované pred %d dňami</item>
+    </plurals>
+    <string name="sync_status">Stav synchronizácie</string>
+    <string name="sync_status_last">Posledná úspešná synchronizácia:</string>
+    <string name="sync_status_last_failed">Posledná neúspešná synchronizácia:</string>
+    <string name="sync_status_never">ešte nikdy nesynchronizované</string>
+    <string name="sync_status_progress">Synchronizácia prebieha…</string>
+    <string name="sync_status_now">práve teraz synchronizované</string>
+    <string name="sync_status_date_format">dd.MM.yyyy HH:mm:ss</string>
+    <string name="short_datetime_format">dd.MM. HH:mm</string>
+    <plurals name="sync_status_pending">
+        <item quantity="one">%d čakajúci upload</item>
+        <item quantity="other">%d čakajúce uploady</item>
+    </plurals>
+    <string name="first_scanned">Najskôr naskenované: %s</string>
+    <string name="datetime_format">%1$td.%1$tm.%1$tY %1$tH:%1$tM</string>
+    <string name="ok">OK</string>
+    <string name="tutorial_setup">Ak chcete začať, vytvorte nové zariadenie v časti "Zariadenia"
+        vášho SD Scan backend účtu organizátora. Potom obdržíte QR kód pre konfiguráciu, ktorý
+        môžete tu naskenovať.</string>
+    <string name="setup_error_legacy_qr_code">Naskenovaný QR kód je platný pre predchádzajúcu verziu
+        tejto aplikácie. Prosím, prejdite do časti "Zariadenia" vášho SD Scan účtu organizátora a
+        vytvorte tam nové zariadenie.</string>
+    <string name="setup_error_invalid_qr_code">Naskenovaný QR kód nie je platný. Prosím, uistite sa,
+        že pochádza z časti "Zariadenia" vášho SD Scan účtu organizátora.</string>
+    <string name="setup_error_version_too_high">Naskenovaný QR kód je pre novšiu verziu SD Scan, než
+        pre túto aplikáciu. Skontrolujte, či existuje aktualizácia tejto aplikácie!</string>
+    <string name="setup_progress">Inicializácia zariadenia…</string>
+    <string name="setup_error_request">Požiadavka bola odmietnutá serverom, prosím skontrolujte
+        svoje údaje.</string>
+    <string name="setup_error_io">Chyba pripojenia pri pokuse o kontaktovanie servera.</string>
+    <string name="setup_error_ssl">Bezpečnostná chyba pri pripojení k serveru.</string>
+    <string name="setup_error_server">Chyba servera pri registrácii zariadenia.</string>
+    <string name="setup_error_response">Server vrátil neplatnú odpoveď.</string>
+    <string name="setup_error_failed">Počiatočný test pripojenia zlyhal.</string>
+    <string name="setup_error_permissions">SD Scan nefunguje bez týchto povolení. Prosím,
+        reštartujte aplikáciu.</string>
+    <string name="welcome_text">SD Scan je aplikácia pre kontrolu vstupeniek, pomocou ktorej môžete
+        kontrolovať vstupenky predané cez SD Scan.</string>
+    <string name="welcome_disclaimer1">Chápem, že na tomto zariadení sú uložené osobné údaje
+        účastníkov mojich udalostí a zariadenie riadne zabezpečím.</string>
+    <string name="cont">POKRAČOVAŤ</string>
+    <string name="hint_url">URL</string>
+    <string name="hint_token">Token</string>
+    <string name="dismiss">Zatvoriť</string>
+    <string name="settings_label_about">O tejto aplikácii</string>
+    <string name="settings_label_licenses">Autori a licencie</string>
+    <string name="settings_label_device_camera">Použiť kameru zariadenia</string>
+    <string name="settings_label_scan_offline">Skenovať offline</string>
+    <string name="settings_label_auto_offline">Automatické riadenie offline režimu</string>
+    <string name="settings_label_auto_offline_help">Ak vyberiete niektorú z uvedených časových
+        hodnôt, aplikácia automaticky prejde na offline skenovanie, ak online skenovanie trvá
+        dlhšie, ako je uvedené. Aplikácia tiež úplne prejde do offline režimu, ak niekoľko skenov za
+        sebou zlyhalo alebo trvalo príliš dlho. Keď sa pripojenie stabilizuje, aplikácia sa vráti
+        späť.</string>
+    <string-array name="settings_valuelabels_auto_offline">
+        <item>Manuálne riadenie (vypnuté)</item>
+        <item>1 sekunda alebo chyba</item>
+        <item>2 sekundy alebo chyba</item>
+        <item>3 sekundy trvá alebo chyba</item>
+        <item>5 sekúnd trvá alebo chyba</item>
+        <item>10 sekúnd trvá alebo chyba</item>
+        <item>15 sekúnd trvá alebo chyba</item>
+        <item>20 sekúnd trvá alebo chyba</item>
+        <item>Iba pri chybách alebo chýbajúcom pripojení</item>
+    </string-array>
+    <string name="settings_summary_scan_offline">Ak skenujete offline, aplikácia kontroluje všetky
+        vstupy vo svojej internej databáze namiesto na serveri a občas synchronizuje svoju databázu.
+        Toto je spoľahlivejšie, ale umožňuje, aby bolo vstupenku možné naskenovať na rôznych
+        zariadeniach viackrát.</string>
+    <string name="settings_label_sounds">Prehrávať zvukové signály</string>
+    <string name="settings_label_hide_names">Skryť mená a ďalšie osobné údaje</string>
+    <string name="settings_label_hide_names_summary">Nemá vplyv na vyhľadávanie, užitočné napríklad
+        v kombinácii s kiosk režimom</string>
+    <string name="question_validation_error">Časti vstupu boli neplatné.</string>
+    <string name="question_input_required">Táto otázka musí byť zodpovedaná.</string>
+    <string name="question_input_invalid">Zadaná odpoveď nie je platná.</string>
+    <string name="yes">Áno</string>
+    <string name="cancel">Zrušiť</string>
+    <string name="status_redeemed">Využité</string>
+    <string name="status_unpaid">Nezaplatené</string>
+    <string name="status_valid">Platné</string>
+    <string name="status_canceled">Zrušené</string>
+    <string name="status_empty">Nenašli sa žiadne výsledky vyhľadávania. Zadajte aspoň štyri znaky.</string>
+    <string name="scan_result_valid">Vstupenka platná</string>
+    <string name="scan_result_exit">Výstup zaznamenaný</string>
+    <string name="scan_result_used">Vstupenka už bola použitá</string>
+    <string name="scan_result_questions">Potrebné informácie</string>
+    <string name="scan_result_invalid">Vstupenka neplatná</string>
+    <string name="scan_result_product">Typ vstupenky tu nie je platný</string>
+    <string name="scan_result_unpaid">Vstupenka nezaplatená</string>
+    <string name="scan_result_canceled">Vstupenka zrušená</string>
+    <string name="error_sync_in_background">Synchronizácia už prebieha na pozadí.</string>
+    <string name="dialog_unpaid_title">Nezaplatená objednávka</string>
+    <string name="dialog_unpaid_text">Táto vstupenka patrí k objednávke, ktorá ešte nebola
+        zaplatená. Chcete účastníka napriek tomu prihlásiť? Objednávka tým nebude označená ako
+        zaplatená.</string>
+    <string name="dialog_unpaid_retry">Napriek tomu prihlásiť</string>
+    <string name="preference_badgeprint_enable">Povoliť tlač odznakov</string>
+    <string name="preference_autobadgeprint_enable">Automaticky tlačiť odznaky</string>
+    <string name="preference_badgeprint_install_pretixprint">Tlač odznakov vyžaduje aplikáciu SD
+        PRINT. Chcete ju nainštalovať?</string>
+    <string name="settings_label_badges">Odznaky</string>
+    <string name="preference_badges_twice">Každý odznak vytlačiť dvakrát</string>
+    <string name="pref_unpaid_ask">Dotaz pri check-ine nezaplatených objednávok</string>
+    <string name="pref_ignore_questions">Nezadávať otázky pri check-ine</string>
+    <string name="pref_unpaid_ask_summary">Ak zoznam pre check-in obsahuje nezaplatené objednávky,
+        toto nastavenie riadi, či sa pred prihlásením zobrazí potvrdzovací dialóg.</string>
+    <string name="already_scanned">už naskenované</string>
+    <string name="total_tickets_sold">Vstupenky (celkom)</string>
+    <string name="ticket_attention">Pozor, zvláštna vstupenka!</string>
+    <string name="hardware_scanner">Použite hardvérové tlačidlá na skenovanie vášho zariadenia.</string>
+    <string name="hardware_scanner_switch_to_camera">Použiť kameru namiesto toho</string>
+    <string name="force_full_resync">Kompletná synchronizácia</string>
+    <string name="settings_label_version">Verzia</string>
+    <string name="settings_label_troubleshooting">Riešenie problémov</string>
+    <string name="force_full_resync_help">Toto neodstráni žiadne miestne údaje, ale nasledujúca
+        synchronizácia každej udalosti znovu stiahne všetky údaje, nielen nedávno zmenené.</string>
+    <string name="full_delete">Obnoviť zariadenie (všetky miestne údaje budú vymazané)</string>
+    <string name="full_delete_confirm">Naozaj chcete toto zariadenie obnoviť? Potom ho budete musieť
+        znovu pripojiť k online systému.</string>
+    <string name="label_shop_active">Aktívne</string>
+    <string name="label_shop_inactive">Obchod deaktivovaný</string>
+    <string name="settings_label_details">Podrobnosti</string>
+    <string name="scan_result_rules">Vstup nie je povolený</string>
+    <string name="scan_result_ambiguous">Kód vstupenky nie je jednoznačný v zozname</string>
+    <string name="scan_result_revoked">Kód vstupenky bol zrušený/zmenený</string>
+    <string name="scan_result_unapproved">Objednávka nie je schválená</string>
+    <string name="scan_result_invalid_time">Vstupenka momentálne nie je platná</string>
+    <string name="scan_result_blocked">Vstupenka zablokovaná</string>
+    <string name="action_label_scantype_exit">Prepnúť na režim výstupu</string>
+    <string name="action_label_scantype_entry">Prepnúť na režim vstupu</string>
+    <string name="scantype_entry">Vstup</string>
+    <string name="scantype_exit">Výstup</string>
+    <string name="checktype_online">Online kontrola</string>
+    <string name="checktype_offline">Offline kontrola</string>
+    <string name="checktype_proxy">Kontrola základnej stanice</string>
+    <string name="debug_info_event">Udalosť: %1$s</string>
+    <string name="debug_info_subevent">Termín: %1$s (%2$s)</string>
+    <string name="debug_info_list">Zoznam: %1$s</string>
+    <string name="debug_info_gate">Prístup: %1$s</string>
+    <string name="debug_info_device">Zariadenie: %1$s</string>
+    <string name="pin_protection">PIN ochrana</string>
+    <string name="pin_protection_pin">Nastaviť PIN</string>
+    <string name="pin_protection_enable">Aktivovať PIN ochranu</string>
+    <string name="pin_protection_settings">Uzamknúť nastavenia</string>
+    <string name="pin_protection_statistics">Uzamknúť štatistiky</string>
+    <string name="pin_protection_switch_event">Uzamknúť zmenu udalosti</string>
+    <string name="pin_protection_switch_mode">Uzamknúť zmenu režimu</string>
+    <string name="pin_protection_enter">Zadajte PIN</string>
+    <string name="settings_label_verification">Kontrola vstupeniek</string>
+    <string name="settings_label_sync">Synchronizácia</string>
+    <string name="settings_label_ui">Používateľské rozhranie</string>
+    <string name="scantype_entry_kiosk">Naskenujte svoju vstupenku pre prihlásenie.</string>
+    <string name="scantype_entry_kiosk_print">Naskenujte svoju vstupenku pre tlač odznaku.</string>
+    <string name="scantype_exit_kiosk">Naskenujte svoju vstupenku pre odhlásenie.</string>
+    <string name="settings_label_datawedge">Inštalovať DataWedge profil</string>
+    <string name="settings_label_search_disable">Deaktivovať vyhľadávanie</string>
+    <string name="settings_label_kioskmode">Kiosk režim</string>
+    <string name="settings_summary_kioskmode">Kiosk režim skrýva menu, ktoré by nemalo byť použité
+        pri samoobsluhe. Kiosk režim nebráni používateľom opustiť aplikáciu pomocou systémových
+        funkcií. Pre vstup do nastavení musíte naskenovať QR kód s vaším PINom.</string>
+    <string name="settings_label_orders_sync">Stiahnuť objednávky</string>
+    <string name="settings_summary_orders_sync">Bez tejto možnosti SD Scan nestiahne údaje o
+        objednávkach a pri štandardných nastaveniach nebudú vstupenky rozpoznané v offline režime.</string>
+    <string name="settings_label_auto_switch">Automatický výber udalostí</string>
+    <string name="settings_summary_auto_switch">S touto možnosťou SD Scan požiada server počas
+        synchronizácie, či sa odporúča prejsť na inú udalosť a check-in zoznam a tento prechod
+        automaticky vykoná.</string>
+    <string name="currently_inside">aktuálne prítomný</string>
+    <string name="error_no_available_events">Nenašla sa žiadna aktuálna alebo budúca udalosť.
+        Skontrolujte dátum a prístupové práva svojich udalostí.</string>
+    <string name="event_select_calendar">Zobraziť kalendár</string>
+    <string name="action_label_ok">OK</string>
+    <string name="setup_grant_camera_permission">Prosím, udeľte povolenie pre kameru pre QR kód
+        skener</string>
+</resources>

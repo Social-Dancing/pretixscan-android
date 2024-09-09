@@ -5,9 +5,9 @@
 
     <LinearLayout
         android:id="@+id/root"
-        android:background="@color/dialog_background_scrim"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/dialog_background_scrim"
         android:gravity="center_horizontal">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,12 +15,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginBottom="32dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="32dp"
             android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
             android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp"
             android:background="?android:colorBackground"
             android:elevation="6dp"
             android:maxWidth="720dp"
@@ -32,9 +32,9 @@
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
                 android:text="@string/operation_select_event"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +52,9 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/calendarView">
 
-                <include android:id="@+id/eventSelectList" layout="@layout/include_event_select_list" />
+                <include
+                    android:id="@+id/eventSelectList"
+                    layout="@layout/include_event_select_list" />
             </FrameLayout>
 
             <com.kizitonwose.calendarview.CalendarView
@@ -62,10 +64,10 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-                app:cv_scrollMode="paged"
                 app:cv_dayViewResource="@layout/event_select_calendar_day"
                 app:cv_monthHeaderResource="@layout/event_select_calendar_header"
                 app:cv_orientation="horizontal"
+                app:cv_scrollMode="paged"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title" />
@@ -74,8 +76,8 @@
                 android:id="@+id/btnOk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
                 android:text="@string/ok"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />

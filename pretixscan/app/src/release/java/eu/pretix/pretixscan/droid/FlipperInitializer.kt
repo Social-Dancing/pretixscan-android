@@ -1,4 +1,4 @@
-package eu.pretix.pretixscan.droid
+package eu.socialdancing.sdscan.droid
 
 import android.content.Context
 import com.facebook.flipper.core.FlipperClient

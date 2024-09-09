@@ -37,8 +37,8 @@
 # - Missing constructors used by Jackson
 # - Missing fragment constructors
 # - Missing JavaScript interfaces
--keep class eu.pretix.pretixscan.** { *; }
--keepclassmembers class eu.pretix.pretixscan.** { *; }
+-keep class eu.socialdancing.sdscan.** { *; }
+-keepclassmembers class eu.socialdancing.sdscan.** { *; }
 -keep class eu.pretix.libpretixsync.** { *; }
 -keepclassmembers class eu.pretix.libpretixsync.** { *; }
 
